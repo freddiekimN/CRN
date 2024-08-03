@@ -1,5 +1,7 @@
 // Copyright (c) Megvii Inc. All rights reserved.
-#include <THC/THC.h>
+// #include <THC/THC.h>
+#include <ATen/cuda/CUDAContext.h>
+#include <ATen/cuda/CUDAEvent.h>
 #include <cuda.h>
 #include <cuda_runtime_api.h>
 #include <torch/extension.h>
@@ -7,7 +9,7 @@
 
 #include <vector>
 
-extern THCState *state;
+// extern THCState *state;
 
 #define CHECK_CUDA(x) \
   TORCH_CHECK(x.type().is_cuda(), #x, " must be a CUDAtensor ")
