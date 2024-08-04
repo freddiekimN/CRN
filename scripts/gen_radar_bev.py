@@ -11,7 +11,7 @@ from nuscenes.utils.data_classes import RadarPointCloud
 from nuscenes.utils.geometry_utils import transform_matrix, view_points
 
 
-SPLIT = 'v1.0-trainval'
+SPLIT = 'v1.0-mini'
 DATA_PATH = 'data/nuScenes'
 OUT_PATH = 'radar_bev_filter'
 info_paths = ['data/nuScenes/nuscenes_infos_train.pkl', 'data/nuScenes/nuscenes_infos_val.pkl']

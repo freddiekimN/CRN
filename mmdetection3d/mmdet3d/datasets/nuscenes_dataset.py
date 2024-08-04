@@ -394,7 +394,7 @@ class NuScenesDataset(Custom3DDataset):
             version=self.version, dataroot=self.data_root, verbose=False)
         eval_set_map = {
             'v1.0-mini': 'mini_val',
-            'v1.0-trainval': 'val',
+            # 'v1.0-trainval': 'val',
         }
         nusc_eval = NuScenesEval(
             nusc,
